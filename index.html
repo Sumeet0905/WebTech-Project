@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juit News</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="left">
+      <img src="juit-logo.png" alt="Logo" class="logo" />
+      <span class="site-name">Juit News</span>
+    </div>
+
+    <div class="center">
+      <input type="text" class="search-input" placeholder="Search..." />
+    </div>
+
+    <div class="right">
+      <a href="#top" class="nav-item">Home</a>
+      <a href="#about" class="nav-item">About Us</a>
+
+      <div class="profile-dropdown" id="profile-toggle">
+        <span class="profile-text">Profile</span>
+        <span class="profile-icon">&#9776;</span>
+        <div class="dropdown-content" id="dropdown">
+          <a href="login-selection.html">Login</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Top Section (Upcoming Events + Latest News) -->
+  <section id="top">
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events">
+      <h2>Upcoming Events</h2>
+      <div class="slideshow-container" id="slideshow">
+        <div class="slide active">
+          <img src="hr-conclave.jpeg" alt="Event 1" />
+          <div class="slide-text">
+            <h3>HR - CONCLAVE 2-4 May 2025</h3>
+            <p>A insightful session from the HRs of the top hirers of our college</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="semiconductor.jpeg" alt="Event 2" />
+          <div class="slide-text">
+            <h3>Connecting Students to the Semiconductor Industry</h3>
+            <p>The Department of Electronics and Communication Engineering, Jaypee University of Information Technology (JUIT), Waknaghat, in collaboration with VLSI FOR ALL Pvt. Ltd., is pleased to invite you to a One-Day Hybrid Workshop</p>
+          </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="latest-news">
+      <h2>Latest News</h2>
+      <div class="news-grid">
+        <!-- News Card 1 -->
+        <div class="news-card">
+          <img src="LF.png" alt="News 1">
+          <h3>Le Fiestus</h3>
+          <p>Jaypee University of Information Technology recently concludes it's cultural fest Le Fiestus , where various artist joined the 3 day Cultural fest.</p>
+          <a href="readme.html" class="read-more">Read More</a> <!-- Redirect to Login -->
+        </div>
+
+        <!-- News Card 2 -->
+        <div class="news-card">
+          <img src="Career.jpeg" alt="News 2">
+          <h3>Career Counciling Session</h3>
+          <p>JUIT conducted career counseling sessions at Mount Shivalik School.They guided students on opportunities in Biotechnology, Bioinformatics, and ECE, highlighting diverse career paths, AI integration, and entrepreneurship.
+          </p>
+          <a href="readme.html" class="read-more">Read More</a> <!-- Redirect to Login -->
+        </div>
+
+        <!-- News Card 3 -->
+        <div class="news-card">
+          <img src="winning.jpeg" alt="News 3">
+          <h3>Great Achievement</h3>
+          <p>JUIT Students Crowned National Winners at SBI College Youth Ideathon 2025 at IIT Delhi!</p>
+          <a href="readme.html" class="read-more">Read More</a> <!-- Redirect to Login -->
+        </div>
+
+        <!-- News Card 4 -->
+        <div class="news-card">
+          <img src="zscaler.jpeg" alt="News 4">
+          <h3>Placement at Jaypee University of Information Technology 2025</h3>
+          <p>Jaypee University of Information Technology announce the selection of our Nine students in Zscaler for Winter Internship 2025</p>
+          <a href="readme.html" class="read-more">Read More</a> <!-- Redirect to Login -->
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- About Us Section -->
+  <div id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>This project is aimed at providing a comprehensive platform for managing events and news. Our goal is to create a user-friendly space where users can explore the latest happenings, stay informed, and engage with content easily.</p>
+
+    <!-- Register Button -->
+    <a href="login-selection.html" class="register-btn">Register Now</a> <!-- Redirect to Login -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+  
+      <!-- Social Media Section (Only buttons) -->
+      <div class="footer-left">
+        <h4>Follow Us</h4>
+        <div class="social-media-icons">
+          <a href="https://www.linkedin.com/school/jaypee-university-of-information-technology-waknaghat/posts/?feedView=all" class="social-icon" target="_blank">
+            <button class="social-btn">LinkedIn</button>
+          </a>
+          <a href="https://www.instagram.com/juit_waknaghat?igsh=MTMzdWlmY2Vxb2Vhbg==" class="social-icon" target="_blank">
+            <button class="social-btn">Instagram</button>
+          </a>
+          <a href="juit@solan.in" class="social-icon">
+            <button class="social-btn">Email</button>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Trademark & Reference Links Section -->
+      <div class="footer-center">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#terms">Terms & Conditions</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+        <p>&copy; 2025 JUIT News. All Rights Reserved.</p>
+      </div>
+  
+      <!-- Subscription Section -->
+      <div class="footer-right">
+        <h4>Subscribe for Updates</h4>
+        <p>Stay updated with the latest news and events.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email" id="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+  
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

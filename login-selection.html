@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Selection - JUIT News</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #b3e0ff, #003366);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-selection-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .login-selection-container h2 {
+      margin-bottom: 30px;
+      color: #003366;
+      font-size: 1.8rem;
+    }
+
+    .login-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .login-buttons a {
+      text-decoration: none;
+    }
+
+    .login-buttons button {
+      padding: 12px 20px;
+      font-size: 1rem;
+      background-color: #003366;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .login-buttons button:hover {
+      background-color: #0055a5;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      .login-buttons button {
+        font-size: 0.95rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-selection-container">
+    <h2>Select Login Type</h2>
+    <div class="login-buttons">
+      <a href="login.html"><button>Reader Login</button></a>
+      <a href="editor-login.html"><button>Editor Login</button></a>
+    </div>
+  </div>
+</body>
+</html>

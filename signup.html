@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Juit News</title>
+  <style>
+    /* General Body Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #b3e0ff 0%, #003366 100%); /* Sky Blue to Dark Blue gradient */
+      color: #333;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #003366, #0055a5); /* Gradient from Dark Blue to Sky Blue */
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 15px;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .left {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .navbar .site-name {
+      font-weight: bold;
+      font-size: 1.7rem;
+      color: #FFD700;
+    }
+
+    /* Sign Up Section Styles */
+    .signup-section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .signup-section h2 {
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .signup-section .input-group {
+      margin-bottom: 20px;
+    }
+
+    .signup-section .input-group label {
+      font-size: 1em;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .signup-section .input-group input {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: border 0.3s ease;
+    }
+
+    .signup-section .input-group input:focus {
+      border: 2px solid #004080;
+      outline: none;
+    }
+
+    .signup-section .signup-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.2em;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .signup-section .signup-btn:hover {
+      background-color: #FFD700;
+    }
+
+    .signup-section p {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .signup-section a {
+      color: #004080;
+      text-decoration: none;
+    }
+
+    .signup-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 40px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="left">
+      <img src="https://via.placeholder.com/40" alt="Logo" class="logo" />
+      <span class="site-name">Juit News</span>
+    </div>
+  </nav>
+
+  <!-- Sign Up Section -->
+  <section class="signup-section">
+    <h2>Create an Account</h2>
+    <form action="signupProcess.php" method="POST" id="signup-form">
+      <div class="input-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required />
+      </div>
+      <div class="input-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required />
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 JUIT News. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
